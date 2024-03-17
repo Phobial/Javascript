@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>area of circle</title>
 </head>
+
 <body>
     <script>
-        
+
+        //Argument and return 
+        function AreaOfCircle(radius) {
+            const area = 3.14 * radius * radius;
+            return area
+        }
+        const result = AreaOfCircle(3);
+        document.write(`area is: ${result} m.sq`)
+    </script>
+    <br>
+    <script>
+
+        // Argument but no Return
+        function Area(radius) {
+            const area = 3.14 * radius * radius;
+            document.write(`area is: ${area} m.sq`)
+        }
+        Area(5)
+    </script>
+    <br>
+    <script>
+
+        // No Argument but Return
+        const radius = 10;
+        function AOfCircle() {
+            const area = 3.14 * radius * radius;
+            return area
+        }
+        const r = AOfCircle();
+        document.write(`area is: ${r} m.sq`)
+    </script>
+    <br>
+    <script>
+        // no Argument and no Return
+        const radiuses = 20;
+        function AreaCircle() {
+            const area = 3.14 * radiuses * radiuses;
+            document.write(`area is: ${area} m.sq`)
+        }
+        AreaCircle()
     </script>
 </body>
+
 </html>
